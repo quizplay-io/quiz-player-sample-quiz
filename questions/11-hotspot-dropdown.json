@@ -1,0 +1,52 @@
+{
+    "id": "11-hotspot-dropdown",
+    "type": "hotspot-dropdown",
+    "question": "Examine the code below and predict the output of each `console.log` statement. Select the correct value for markers **A**, **B**, and **C**.",
+    "image": "assets/images/js_closure_code.svg",
+    "dropdowns": [
+        {
+            "label": "A",
+            "position": {
+                "x": 78,
+                "y": 48
+            },
+            "options": [
+                "A: 10",
+                "A: 20",
+                "A: 30",
+                "A: undefined"
+            ],
+            "correctIndex": 2
+        },
+        {
+            "label": "B",
+            "position": {
+                "x": 78,
+                "y": 67
+            },
+            "options": [
+                "B: 10",
+                "B: 20",
+                "B: 30",
+                "B: undefined"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "label": "C",
+            "position": {
+                "x": 78,
+                "y": 87
+            },
+            "options": [
+                "C: 10",
+                "C: 20",
+                "C: 30",
+                "C: undefined"
+            ],
+            "correctIndex": 0
+        }
+    ],
+    "explanation": "This tests **lexical scoping** in JavaScript:\n- **A: 30** — `inner()` has its own `let x = 30`, so `console.log` on line 8 prints 30.\n- **B: 20** — After `inner()` returns, line 12 is still inside `outer()` where `let x = 20`.\n- **C: 10** — Line 16 is in the global scope where `let x = 10`.\n\nEach function creates its own scope. The `let` keyword ensures block-level scoping, so each `x` is independent.",
+    "category": "JavaScript Scope & Closures"
+}

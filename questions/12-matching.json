@@ -1,0 +1,26 @@
+{
+    "id": "12-matching",
+    "type": "matching",
+    "question": "Match the JavaScript code snippets to their resulting output or behavior.",
+    "sourceItems": [
+        "Returns `[2, 4, 6]`",
+        "Returns `[2, 3]`",
+        "Returns `6`",
+        "Logs `1`, `2`, `3`",
+        "Returns `true`"
+    ],
+    "targetSlots": [
+        "`[1, 2, 3].map(x => x * 2)`",
+        "`[1, 2, 3].filter(x => x > 1)`",
+        "`[1, 2, 3].reduce((a, b) => a + b, 0)`",
+        "`[1, 2, 3].forEach(x => console.log(x))`"
+    ],
+    "correctMapping": [
+        0,
+        1,
+        2,
+        3
+    ],
+    "explanation": "- **map** creates a new array with the results of calling a provided function on every element.\n- **filter** creates a new array with all elements that pass the test.\n- **reduce** executes a reducer function on each element, resulting in a single output value.\n- **forEach** executes a provided function once for each array element (often used for side effects like logging).",
+    "category": "JavaScript Fundamentals"
+}

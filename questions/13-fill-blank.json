@@ -1,0 +1,39 @@
+{
+    "id": "13-fill-blank",
+    "type": "fill-blank",
+    "question": "Complete each statement by selecting the correct term.",
+    "blanks": [
+        {
+            "id": "scope-declaration",
+            "label": "Variables declared with `let` and `const` have ___ scope.",
+            "options": [
+                "Block",
+                "Function",
+                "Global"
+            ],
+            "correctIndex": 0
+        },
+        {
+            "id": "promise-queue",
+            "label": "Resolved `Promise` callbacks are placed in the ___.",
+            "options": [
+                "Task Queue",
+                "Microtask Queue",
+                "Call Stack"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "this-binding",
+            "label": "Arrow functions inherit their `this` value through ___ binding.",
+            "options": [
+                "Lexical",
+                "Dynamic",
+                "Global"
+            ],
+            "correctIndex": 0
+        }
+    ],
+    "explanation": "- `let`/`const` are **Block** scoped (unlike `var` which is function-scoped).\n- Resolved Promise callbacks are placed in the **Microtask Queue**, which has higher priority than the Task Queue.\n- Arrow functions use **Lexical** `this` binding — they inherit `this` from the enclosing scope rather than defining their own.",
+    "category": "JavaScript Concepts"
+}

@@ -16,6 +16,9 @@
     "questions/07-case-study-js-perf-q1.json",
     "questions/08-case-study-js-perf-q2.json",
     "questions/09-ordering.json",
-    "questions/10-hotspot.json"
+    "questions/10-hotspot.json",
+    "questions/11-hotspot-dropdown.json",
+    "questions/12-matching.json",
+    "questions/13-fill-blank.json"
   ]
 }
